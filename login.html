@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <style>
+       body { 
+           font-family: Arial, sans-serif;
+               background-color: yellow;
+                   margin: 0;
+                       padding: 0;
+                           display: flex;
+                               justify-content: center;
+                                   align-items: center;
+                                       height: 100vh;
+                                         }
+
+       login-container {
+       background-color: yellow;
+       border-radius: 8px;
+       padding:20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="login-cotainer">
+     <form action="/login" 
+      method="post">Login
+       <label for="username">Usuario:</label>
+        <input type="text" name="username">
+     <br> <label for="password">Senha:</label> 
+        <input type="password" name="password">
+       <button type='submit'>login</button>
+       </form>
+       <a href="{{ url_for('regis') }}">Registrar</a>
+    </div>
+</body>
+</html>
